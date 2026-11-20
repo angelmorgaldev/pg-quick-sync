@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# PostgreSQL extension build artifacts
+*.o
+*.so
+*.dylib
+*.bc
+results/
+regression.diffs
+regression.out

@@ -1,0 +1,4 @@
+comment = 'ergonomic foreign data wrapper connection manager and incremental data sync'
+default_version = '0.1.0'
+relocatable = false
+requires = 'postgres_fdw'
