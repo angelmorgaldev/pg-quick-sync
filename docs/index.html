@@ -937,10 +937,10 @@ select
 from quick_sync.list_connections();
 
 -- Sample Output:
---    alias     |         host         |     dbname     | remote_user | fetch_size | foreign_tables | is_active 
--- -------------+----------------------+----------------+-------------+------------+----------------+-----------
---  analytics   | dw.internal.acme.com | analytics_prod | etl_user    |      50000 |              4 | t
---  stripe_db   | db.replica.cloud     | finance_db     | reader      |     100000 |              0 | t</code></pre>
+--      alias     |         host         |        dbname        | remote_user | fetch_size | foreign_tables | is_active 
+-- ----------------+----------------------+----------------------+-------------+------------+----------------+-----------
+--  analytics_dw   | dw.internal.acme.com | analytics_production | etl_user    |      50000 |              4 | t
+--  stripe_replica | db.replica.cloud     | finance_db           | reader      |     100000 |              0 | t</code></pre>
               </div>
             </div>
 
@@ -1693,7 +1693,7 @@ select quick_sync.delete_connection('analytics_dw', p_cascade => false);</code><
       const searchInput = document.getElementById('quickSearchInput');
       const pageTitle = document.getElementById('pageTitle');
 
-      let currentLang = localStorage.getItem('pg_lang') || 'es'; // Default to Spanish as requested, or saved
+      let currentLang = localStorage.getItem('pg_lang') || 'en';
 
       function applyLanguage(lang) {
         currentLang = lang;
